@@ -6,6 +6,12 @@ authors = ["tiulpin <viktor@tiulp.in>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+fastapi = "^0.63.0"
+typer = "^0.3.2"
+uvicorn = "^0.13.4"
+
+[tool.poetry.scripts]
+server = "primer.__main__:start"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
