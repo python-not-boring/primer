@@ -15,7 +15,7 @@ class Item(BaseModel):
 
 @app.get("/")
 def root():
-    return {"message": "Bye Risitas!"}
+    return {"message": "Hello World!"}
 
 
 @app.post("/items/")
