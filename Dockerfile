@@ -28,7 +28,7 @@ RUN poetry install --no-dev
 
 FROM python:3.9-slim-buster as production
 COPY --from=python-base /app /app
-ENV PATH="/app/.venv/:$PATH"
+ENV PATH="/app/.venv/bin/:$PATH"
 EXPOSE 8000
 ENV HOST="0.0.0.0"
 ENV PORT=8000
